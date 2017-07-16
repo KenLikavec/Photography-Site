@@ -7,3 +7,297 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
+
+h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 200%;  /*--Of the inherit size that the browser gives the text--*/
+	font-weight: 700;
+	 color: #2C2C2C; 
+	 text-align: center;
+	 text-decoration: underline;  
+}
+
+p{
+	font-family: 'Raleway', serif;
+	color: #2C2C2C;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify; /*--Gives it the newspaper type feel with the lines on the side of the page--*/
+	font-weight: 300; 
+}
+
+img{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.intro{
+	height: 100%;
+	width:  100%;
+	margin: auto;
+	background: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg) no-repeat 50% 50%; /*--The 50%'s center it on the screen--*/
+	background-size: cover; /*--Allows the entirety of the image to be shown on the website, otherwise only poritons of the image would be shown--*/
+	display: table;
+	top: 0; /*--Top regarding margin--*/
+
+ }
+
+ .intro .inner{
+ 	display: table-cell;
+ 	vertical-align: middle; 
+ 	width: 100%;
+ 	max-width: none;
+ }
+
+.content{
+	max-width: 600px; 
+	margin: auto;
+}
+
+h1{
+	font-family: 'Playfair display', serif;
+	font-size:  300%;
+	font-weight: 700;
+	color:  #FFF;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000; /*--This gives a "shadowy" effect around the text making it easier to read with it having an image as its background the 250px value is for diameter--*/
+}
+
+.content p{
+	color: #FFF;
+}
+
+.inner{
+	 max-width: 600px;
+	 margin: auto;
+	 font-size: 170%;
+	 line-height: 1.6;
+	 padding: 10px;
+}
+
+
+/*--START OF NAVIGATION--*/ 
+
+
+nav{
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+}
+
+nav ul{
+	list-style: none; /*--Gets rid of the bullet points inherintly given to unordered list items--*/
+	float: left;
+}
+
+nav ul li{
+	 font-family: 'Raleway', sans-serif;
+	 font-size: 120%;
+}
+
+nav ul li a{
+	color: #FFF;
+	text-decoration: none;
+
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+
+nav ul, nav:active ul{ /*--This is for the hamburger looking icon when the user hovers over it, it is considered "active" " --*/
+	display: none; /*--Will not display until the icon is hovered over--*/
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000; /*--z-index causes it to display in front of all other elements--*/
+}
+
+nav li {
+	width: 100%;
+	 padding: 8px 0 10px 7px;
+	 margin: 0;
+}
+
+nav:hover ul{
+	display: block;
+	position: absolute;
+}
+
+#menu-icon{
+	width: 30px;
+	height: 26px;
+	background: url(img/nav-icon.png) center;
+	display: inline-block; 
+	margin: 50px 0 0 50px;
+}
+
+/*--END OF NAVIGATION--*/
+
+.left-col{
+	 width: 60%;
+	 float: left;
+	 margin: 4% 0 4% 4%;
+}
+
+.sidebar{
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+
+.one-third-port{
+	width: 29.333333%;
+	padding: 2%;
+	float: left; /*--Allows the one-third pictures to line up--*/
+}
+
+.one-third-port img:hover{
+	opacity: .6; /*--Meaning you will see 60% of said image and 40% white background--*/
+}
+
+.contact p{
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.contact a{
+	color: #2C2C2C;
+	text-decoration: none;
+}
+
+.break{
+	display: none; /*--Causes the "Contact Me" portion of page to display "in-line" UNTIL the screen size shrinks and becomes responsive then it turn into a vertical list--*/
+}
+
+.clearfix{
+	clear: both;
+	height: 3%;
+}
+
+.parallax{
+	background: url(https://static.pexels.com/photos/30161/pexels-photo-30161.jpg) repeat fixed 100%;
+	opacity: .5;
+}
+
+.parallax-inner{
+	padding-top: 17%; /*--This essentailly determines how much of the "parallax" image is seen on the screen in terms of height--*/
+}
+
+.social{
+	list-style: none;
+	text-align: center;
+}
+
+.social li{
+	display: inline;
+}
+
+.social i{ /*--Styles the actual icons themselves--*/
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2C2C2C;
+}
+
+.social i:hover{
+	color: #606060;
+}
+
+footer.second{
+	background-color: #2C2C2C;
+}
+
+footer.second p{
+	 color: #FFF;
+	 text-align: center;
+	 padding: 5%;
+}
+
+
+
+@media screen and (max-width: 768px){
+	#menu-icon{
+		margin: 26px 0 0 26px;
+	}
+
+	nav ul, nav:active ul{
+		padding: 8px  0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+
+	.inner{
+		font-style: 120%;
+	}
+
+	.content h1{
+		font-size:  180%;
+	}
+
+	p{
+		font-size: 120%;
+	}
+
+	h2{
+		font-size: 160%;
+	}
+
+	.left-col{
+		width: 96%;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	}
+
+	.sidebar{
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	img{
+		padding: 2%;
+	}
+
+	.one-third-port{
+	 	width: 96%;
+	 	margin: 0 auto;
+	 	padding: 0;
+	}
+
+	.break{
+		display: block;
+	}
+
+	.parallax{
+		display: none;
+	}
+
+	.social i{
+		font-size: 170%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
